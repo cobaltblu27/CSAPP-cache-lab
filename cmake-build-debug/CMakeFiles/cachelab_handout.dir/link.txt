@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/cachelab_handout.dir/cachelab.c.o CMakeFiles/cachelab_handout.dir/csim.c.o CMakeFiles/cachelab_handout.dir/test-trans.c.o CMakeFiles/cachelab_handout.dir/tracegen.c.o CMakeFiles/cachelab_handout.dir/trans.c.o  -o cachelab_handout 
