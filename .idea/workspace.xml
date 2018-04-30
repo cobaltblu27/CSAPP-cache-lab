@@ -14,11 +14,15 @@
     <list default="true" id="e8c0276a-8b31-4536-a7f5-8a1962f989dd" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.csim_results" afterPath="$PROJECT_DIR$/.csim_results" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/cobalt-handin.tar" afterPath="$PROJECT_DIR$/cobalt-handin.tar" />
-      <change beforePath="$PROJECT_DIR$/csim" afterPath="$PROJECT_DIR$/csim" />
-      <change beforePath="$PROJECT_DIR$/csim.c" afterPath="$PROJECT_DIR$/csim.c" />
+      <change beforePath="$PROJECT_DIR$/.marker" afterPath="$PROJECT_DIR$/.marker" />
+      <change beforePath="$PROJECT_DIR$/cobalt-handin.tar" afterPath="" />
       <change beforePath="$PROJECT_DIR$/test-trans" afterPath="$PROJECT_DIR$/test-trans" />
+      <change beforePath="$PROJECT_DIR$/trace.f0" afterPath="$PROJECT_DIR$/trace.f0" />
+      <change beforePath="$PROJECT_DIR$/trace.f1" afterPath="$PROJECT_DIR$/trace.f1" />
+      <change beforePath="$PROJECT_DIR$/trace.f2" afterPath="$PROJECT_DIR$/trace.f2" />
+      <change beforePath="$PROJECT_DIR$/trace.tmp" afterPath="$PROJECT_DIR$/trace.tmp" />
       <change beforePath="$PROJECT_DIR$/tracegen" afterPath="$PROJECT_DIR$/tracegen" />
+      <change beforePath="$PROJECT_DIR$/tracegen.c" afterPath="$PROJECT_DIR$/tracegen.c" />
       <change beforePath="$PROJECT_DIR$/trans.c" afterPath="$PROJECT_DIR$/trans.c" />
       <change beforePath="$PROJECT_DIR$/trans.o" afterPath="$PROJECT_DIR$/trans.o" />
     </list>
@@ -32,46 +36,30 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="trans.c" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/trans.c">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="753">
-                  <caret line="158" column="17" lean-forward="true" selection-start-line="158" selection-start-column="17" selection-end-line="158" selection-end-column="17" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="tracegen.c" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/tracegen.c">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="450">
-                  <caret line="46" column="1" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="1" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="trans.c" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/trans.c">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="145">
-                  <caret line="32" column="42" lean-forward="true" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="trans.c" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/trans.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="1" column="3" lean-forward="false" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+              <folding>
+                <element signature="e#6008#6642#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tracegen.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tracegen.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="41" column="18" lean-forward="false" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -174,12 +162,12 @@
       <option name="presentableId" value="Default" />
       <updated>1524743915912</updated>
       <workItem from="1524743917114" duration="8645000" />
-      <workItem from="1524752672480" duration="36853000" />
+      <workItem from="1524752672480" duration="47593000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45498000" />
+    <option name="totallyTimeSpent" value="56238000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="260" y="22" width="1922" height="1092" extended-state="6" />
@@ -255,7 +243,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#6008#6642#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -297,17 +287,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tracegen.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="46" column="1" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="1" />
+        <state relative-caret-position="360">
+          <caret line="41" column="18" lean-forward="false" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/trans.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="753">
-          <caret line="158" column="17" lean-forward="true" selection-start-line="158" selection-start-column="17" selection-end-line="158" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="18">
+          <caret line="1" column="3" lean-forward="false" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+          <folding>
+            <element signature="e#6008#6642#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
