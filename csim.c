@@ -1,6 +1,7 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <getopt.h>
 #include "cachelab.h"
 
 const char *msg = "Options:\n"
@@ -62,26 +63,48 @@ int main(int argc, char *argv[]) {
     cache = malloc(sizeof(long *) * S);
     for (int i = 0; i < S; i++) {
         cache[i] = malloc(sizeof(long) * E);
+        for (int j = 0; j < E; j++)
+            cache[i][j] = -1;
     }
     while (fscanf(tracefile, " %c %x,%d", &id, &addr, &size) > 0) {
         if (id == 'I') continue;
-        if(verbose)
-            printf("%c %x ", id, addr);
+        if (verbose)
+            printf("%c %x,%d ", id, addr, size);
         addr -= addr % B;
-        long *target = &cache[(addr % (S * B)) >> b][(addr >> (s + b)) % E];
+        long *tset = cache[(addr % (S * B)) >> b];
         //where memory should be in cache
-        if (*target == addr){
-            if(verbose)
-                printf("hit ");
-            hit++;
+        for (int c = 0; c < 2; c++) {//do this twice when id == 'M', once otherwise
+            int hit_index = -1;
+            for (int i = 0; i < E; i++) {
+                if (tset[i] == addr) {//hit
+                    if (verbose)
+                        printf("hit ");
+                    hit++;
+                    hit_index = i;
+                    break;
+                }
+            }
+            if (hit_index == -1) {//miss
+                miss++;
+                if (verbose)
+                    printf("miss ");
+                if (tset[E - 1] != -1) {
+                    if (verbose)
+                        printf("eviction ");
+                    evict++;
+                }
+                tset[E - 1] = addr;
+                hit_index = E - 1;
+            }
+            long temp = tset[hit_index];
+            for (int i = hit_index; i > 0; i--) {
+                tset[i] = tset[i - 1];
+            }
+            tset[0] = temp;
+            if (id != 'M')
+                break;
         }
-        else{
-            *target = addr;
-            if(verbose)
-                printf("miss ");
-            //TODO
-        }
-
+        printf("\n");
     }
 
 
